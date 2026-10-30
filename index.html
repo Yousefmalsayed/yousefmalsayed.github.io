@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Control Center Merge</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #161618; --fg: #ececf0; --muted: #a0a3a8; } }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif;
+         max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+
+<h1>Control Center Merge</h1>
+<p class="muted">A private tool for one person. Last updated 30 October 2026.</p>
+
+<p>Control Center Merge is a small script that runs on Dr. Yousef Alsayed's own computer. Every few minutes it
+reads short status notes he saves to one folder in his Google Drive and files them into his own Google Doc
+("Control Center"). It is not offered to anyone else, and nobody else can sign in to it.</p>
+
+<h2 id="privacy">Privacy policy</h2>
+
+<p><strong>Who uses it.</strong> Only the owner, Dr. Yousef Alsayed, using his own Google account.</p>
+
+<p><strong>What Google data it accesses.</strong> With the owner's permission it uses:</p>
+<ul>
+  <li><strong>Google Drive</strong>: to list and read the note files in one Drive folder ("Control Center Inbox"), and to move each note to Drive's trash once it has been filed.</li>
+  <li><strong>Google Docs</strong>: to read and edit one document, "Control Center — Yousef".</li>
+</ul>
+<p>It does not read, change or delete any other files, emails, contacts or calendars.</p>
+
+<p><strong>How the data is used.</strong> Only to file the owner's notes into his own document. To decide which
+section a note belongs in, the text of the note and of the document is sent to Anthropic's Claude AI model, which
+returns a filing suggestion. The script itself makes every change in Google Drive and Docs; the AI model has no
+access to the Google account.</p>
+
+<p><strong>Storage.</strong> The Google sign-in token is stored only on the owner's computer, readable only by his
+user account. The script keeps a local log of what it filed. No data is kept on any server run by this tool.</p>
+
+<p><strong>Sharing.</strong> Data is not sold, used for advertising, or shared with anyone, apart from the text sent
+to Anthropic as described above, under Anthropic's own terms and privacy policy.</p>
+
+<p><strong>Google API Services User Data Policy.</strong> The use of information received from Google APIs adheres
+to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+including the Limited Use requirements.</p>
+
+<p><strong>Stopping access.</strong> The owner can remove the tool's access at any time at
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+<p><strong>Contact.</strong> dr.yousef.alsayed@gmail.com</p>
+
+</body>
+</html>
